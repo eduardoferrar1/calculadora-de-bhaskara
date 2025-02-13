@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" >
+        <link rel="stylesheet" href="style.css" />
+        <title> bascara </title>
+    </head>
+    <body class="main fx-column ">        
+        <div class="mg-bt-25px fx-column">
+            <label>a</label>
+
+            <input type="number" id="a" placeholder="a" class="imput mg-bt-15px" >
+           
+        </div>
+
+        <div class="mg-bt-25px fx-column">
+            <label>b</label>
+
+            <input type="number" id="b" placeholder="b" class="imput mg-bt-15px" >
+        </div>
+
+        <div class="mg-bt-25px fx-column">
+            <label>c</label>
+
+            <input type="number" id="c" placeholder="c" class="imput mg-bt-15px" >
+            <button type="button" onclick="calcular()" class="button mg-bt-15px" >calcular</button>
+        </div>
+
+        <div class="mg-bt-25px fx-column">
+            <label >x1</label>
+                <input type="text" id="resultado" class="imput mg-bt-15px" disabled >
+        </div>
+
+        <div class="mg-bt-25px fx-column">
+            <label >x2</label>
+                <input type="text" id="resultado2" class="imput mg-bt-15px" disabled>
+        </div>
+
+        <script>
+            function calcular(){
+                var a = document.getElementById('a').value
+                console.log(a)
+                var b = document.getElementById('b').value
+                console.log(b)
+                var c = document.getElementById('c').value
+                console.log(c)
+                var calculo1 = (-b + Math.sqrt((b * b) + -4 * a * c)) / (2 * a)
+                var calculo2 = (-b - Math.sqrt((b * b) + -4 * a * c)) / (2 * a)
+
+                document.getElementById("resultado").value = Math.ceil(calculo1)
+                document.getElementById("resultado2").value = Math.ceil(calculo2)
+
+            }
+            
+
+
+        </script>
+        
+
+    </body>
+
+</html>

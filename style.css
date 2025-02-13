@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.fx-column{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imput{
+    font-size: 40px;
+    
+}
+
+.a{
+    font-size: 40px;
+}
+
+.b{
+    font-size: 40px;
+}
+
+.c{
+    font-size: 40px;
+}
+
+.main{
+    font-size: 35px;
+    padding-top: 25px;
+}
+.mg-bt-25px{
+    margin-bottom: 25px;
+
+}
+
+.mg-bt-15px{
+    margin-bottom: 15px;
+
+}
